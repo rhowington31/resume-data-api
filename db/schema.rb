@@ -59,7 +59,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_29_005912) do
     t.string "linkedin_url"
     t.string "twitter_handle"
     t.string "website_url"
-    t.string "online_resume"
+    t.string "online_resume_url"
     t.string "github_url"
     t.string "photo"
     t.datetime "created_at", null: false

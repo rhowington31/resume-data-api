@@ -9,7 +9,7 @@ class CreateStudents < ActiveRecord::Migration[7.0]
       t.string :linkedin_url
       t.string :twitter_handle
       t.string :website_url
-      t.string :online_resume
+      t.string :online_resume_url
       t.string :github_url
       t.string :photo
 
