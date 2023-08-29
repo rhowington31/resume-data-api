@@ -1,18 +1,13 @@
 class StudentsController < ApplicationController
-  
-  def create
-    student = Student.new()
 
   def index
-    students = Students.all
+    students = Student.all
     render json: students.as_json
   end
 
   def show
-    students = Students.find_by(id: params["id"])
+    student = Student.find_by(id: params["id"])
     render json: student.as_json
   end
-
-
 
 end
