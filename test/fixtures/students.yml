@@ -9,7 +9,7 @@ one:
   linkedin_url: MyString
   twitter_handle: MyString
   website_url: MyString
-  online_resume: MyString
+  online_resume_url: MyString
   github_url: MyString
   photo: MyString
 
@@ -22,6 +22,6 @@ two:
   linkedin_url: MyString
   twitter_handle: MyString
   website_url: MyString
-  online_resume: MyString
+  online_resume_url: MyString
   github_url: MyString
   photo: MyString
