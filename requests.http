@@ -1,0 +1,23 @@
+@jwt = Bearer
+
+# Users (aka SIGN UP/ACCOUNT CREATION)
+### create
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password" 
+}
+
+# Sessions (aka LOGGING IN)
+### create
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
