@@ -1,22 +1,7 @@
-@jwt = Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2OTM0MzkzODF9.AgaW-jz1GsfY48RxfMmz3OF-msQ16e1VG2XB_iqsO9c
+@jwt = Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2OTM0NzQ3MzN9.tuF7IwYHBMpEY4h352TXlAL3jR6za1IxNwbtSbFRYxE
 
-# Experiences
-### create
-POST http://localhost:3000/experiences.json
-# Authorization: {{jwt}}
-Content-Type: application/json
-
-{
-  "student_id": 1,
-  "start_date": "01/01/01",
-  "end_date": "12/31/01", 
-  "job_title": "test",
-  "company_name": "test",
-  "details": "test" 
-}
-
-# Users (aka SIGN UP/ACCOUNT CREATION)
-### create
+# Users 
+### create (aka SIGN UP/ACCOUNT CREATION)
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
@@ -36,3 +21,41 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password"
 }
+
+# Students
+### create
+POST http://localhost:3000/students.json
+Authorization: {{jwt}}
+Content-Type: application/json
+
+{
+  "first_name": "test",
+  "last_name": "test",
+  "email": "test",
+  "phone_number": "123456789",
+  "short_bio": "test",
+  "linkedin_url": "test",
+  "twitter_handle": "test",
+  "website_url": "test",
+  "online_resume_url": "test",
+  "github_url": "test",
+  "photo": "test"
+}
+
+# Experiences
+### create
+POST http://localhost:3000/experiences.json
+Authorization: {{jwt}}
+Content-Type: application/json
+
+{
+  "student_id": 1,
+  "start_date": "01/01/01",
+  "end_date": "12/31/01", 
+  "job_title": "test",
+  "company_name": "test",
+  "details": "test" 
+}
+
+
+
