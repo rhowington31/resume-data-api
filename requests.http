@@ -1,4 +1,19 @@
-@jwt = Bearer
+@jwt = Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2OTM0MzkzODF9.AgaW-jz1GsfY48RxfMmz3OF-msQ16e1VG2XB_iqsO9c
+
+# Experiences
+### create
+POST http://localhost:3000/experiences.json
+# Authorization: {{jwt}}
+Content-Type: application/json
+
+{
+  "student_id": 1,
+  "start_date": "01/01/01",
+  "end_date": "12/31/01", 
+  "job_title": "test",
+  "company_name": "test",
+  "details": "test" 
+}
 
 # Users (aka SIGN UP/ACCOUNT CREATION)
 ### create
