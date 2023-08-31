@@ -34,7 +34,7 @@ class StudentsController < ApplicationController
   end
 
   def update
-    @student = Student.find_by(id: params[:id])
+    @student = Student.find_by(id: params[:id], user_id: current_user.id)
     if @student.update(
       first_name: params[:first_name] || @student.first_name,
       last_name: params[:last_name] || @student.last_name,
@@ -57,6 +57,6 @@ class StudentsController < ApplicationController
   def destroy
     @student = Student.find_by(id: params[:id])
     @student.destroy
-    render json: { message: "Student destroyed successfully" }
+    render json: { message: "Student profile successfully destroyed." }
   end
 end

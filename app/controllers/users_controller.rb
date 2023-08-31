@@ -25,7 +25,7 @@ class UsersController < ApplicationController
       @user = @user.destroy
       render json: { message: "User successfully deleted." }
     else
-      render json: { error: "You are note authorized to delete this user account." }
+      render json: { error: "You are not authorized to delete this user account." }
     end
   end
 end

@@ -1,4 +1,4 @@
-@jwt = Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2OTM0NzQ3MzN9.tuF7IwYHBMpEY4h352TXlAL3jR6za1IxNwbtSbFRYxE
+@jwt = Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2OTM1MjgzNDV9.HuiFjO_nD1JwMd3tMVxCA5a_xevH3Xvng4DLQt3COu4
 
 # Users 
 ### create (aka SIGN UP/ACCOUNT CREATION)
@@ -11,6 +11,10 @@ Content-Type: application/json
   "password": "password",
   "password_confirmation": "password" 
 }
+
+### destroy
+DELETE http://localhost:3000/users/3.json
+Authorization: {{jwt}}
 
 # Sessions (aka LOGGING IN)
 ### create
