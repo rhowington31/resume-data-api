@@ -33,7 +33,7 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
     assert_response 200
 
     data = JSON.parse(response.body)
-    assert_equal ["id", "first_name", "last_name", "email", "phone_number", "short_bio", "linkedin_url", "twitter_handle", "website_url", "online_resume_url", "github_url", "photo", "created_at", "updated_at"], data.keys
+    assert_equal ["id", "first_name", "last_name", "email", "phone_number", "short_bio", "linkedin_url", "twitter_handle", "website_url", "github_url", "photo", "created_at", "updated_at", "online_resume_url"], data.keys
   end
 
   test "update" do
